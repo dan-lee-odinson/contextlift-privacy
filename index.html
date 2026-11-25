@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ContextLift — Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #050912; --bg-2: #0a1628; --ink: #e0e6ed; --ink-2: #8aa4c2;
+      --ink-3: #8196ad; --accent: #c44d28; --line: #1a2940;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      background: radial-gradient(ellipse at top, var(--bg-2) 0%, var(--bg) 100%);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.7; min-height: 100vh;
+    }
+    .page { max-width: 720px; margin: 0 auto; padding: 60px 24px 80px; }
+    header { margin-bottom: 40px; border-bottom: 1px solid var(--line); padding-bottom: 24px; }
+    .brand { font-family: 'JetBrains Mono', 'Consolas', monospace;
+             font-size: 12px; letter-spacing: 0.22em; color: var(--ink-2); }
+    h1 { font-size: 28px; font-weight: 300; letter-spacing: 0.02em; margin-top: 14px; color: var(--ink); }
+    .updated { font-size: 13px; color: var(--ink-3); margin-top: 10px; }
+    h2 { font-size: 18px; font-weight: 500; color: var(--ink); margin: 36px 0 12px; letter-spacing: 0.02em; }
+    p { color: var(--ink); margin-bottom: 14px; font-size: 15px; }
+    ul { padding-left: 22px; margin-bottom: 14px; }
+    li { color: var(--ink); margin-bottom: 8px; font-size: 15px; }
+    code { font-family: 'JetBrains Mono', 'Consolas', monospace;
+           background: var(--bg-2); padding: 1px 6px; border-radius: 3px;
+           font-size: 13px; color: var(--accent); }
+    a { color: var(--accent); }
+    a:hover { color: #d75a35; }
+    .tldr { background: var(--bg-2); border-left: 3px solid var(--accent);
+            padding: 18px 22px; margin: 24px 0; border-radius: 0 4px 4px 0; }
+    .tldr strong { color: var(--accent); letter-spacing: 0.1em; font-size: 11px;
+                   text-transform: uppercase; display: block; margin-bottom: 8px; }
+    footer { margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--line);
+             font-size: 13px; color: var(--ink-3); }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="brand">CONTEXTLIFT</div>
+      <h1>Privacy Policy</h1>
+      <div class="updated">Last updated: November 25, 2026</div>
+    </header>
+
+    <div class="tldr">
+      <strong>TL;DR</strong>
+      ContextLift turns pages into Markdown on your own computer. It reads a page only when you ask it to, it never sends page content anywhere, and it has no analytics. If you buy Pro, the payment is handled by ExtensionPay and Stripe, and the extension checks with ExtensionPay whether Pro is unlocked.
+    </div>
+
+    <h2>1. Who we are</h2>
+    <p>"ContextLift: Page to Markdown for AI" is a Chrome browser extension that converts a web page, or the part you select, into Markdown you can copy or download. This policy describes how the extension handles information.</p>
+
+    <h2>2. What the extension reads</h2>
+    <ul>
+      <li><strong>The page you clip.</strong> When you open the ContextLift popup, use its right-click menu item, or press its keyboard shortcut, Chrome lets the extension read the current tab. ContextLift converts that page to Markdown inside your browser. The text goes to your clipboard or to a file you download, and nowhere else.</li>
+      <li><strong>All tabs in a window (Pro only).</strong> If you use "Copy all tabs" or "Download all tabs", ContextLift asks Chrome for permission to read your open tabs, and uses it only for that action. You can remove this permission at any time in Chrome's extension settings.</li>
+    </ul>
+
+    <h2>3. What the extension stores on your device</h2>
+    <ul>
+      <li><strong>Your settings</strong>: whether to add a header, keep links and keep images, and your custom header template. These are stored in Chrome's synced storage so they follow your Chrome profile.</li>
+      <li><strong>Pro status</strong>: whether Pro is unlocked, cached in Chrome's local storage so Pro keeps working offline.</li>
+      <li><strong>ExtensionPay key</strong>: a random identifier that ExtensionPay creates so it can recognise this installation's purchase. It is stored in Chrome's local storage.</li>
+    </ul>
+    <p>ContextLift does not store the pages you clip.</p>
+
+    <h2>4. What the extension does NOT collect</h2>
+    <ul>
+      <li>No page content, URLs or browsing history leave your computer</li>
+      <li>No analytics or telemetry</li>
+      <li>No advertising or third-party trackers</li>
+      <li>No account or login to use the free features</li>
+      <li>No data is ever sold or shared with marketers</li>
+    </ul>
+
+    <h2>5. Payments for Pro</h2>
+    <p>Pro is a one-time purchase handled by <a href="https://extensionpay.com">ExtensionPay</a>, which uses <a href="https://stripe.com">Stripe</a> for card payments. When you choose to pay, you do so on their pages, and they receive the details you give them there, such as your email address and payment details. ContextLift never sees your card details. To check whether Pro is unlocked, the extension sends its ExtensionPay key to <code>extensionpay.com</code>. See <a href="https://extensionpay.com/privacy">ExtensionPay's privacy policy</a> and <a href="https://stripe.com/privacy">Stripe's privacy policy</a>.</p>
+    <p>Apart from ExtensionPay, the extension does not contact any server. There is no ContextLift backend.</p>
+
+    <h2>6. Browser permissions and what they're for</h2>
+    <ul>
+      <li><code>activeTab</code> and <code>scripting</code>: to read the page you are clipping, only when you ask</li>
+      <li><code>storage</code>: to save your settings and Pro status</li>
+      <li><code>contextMenus</code>: to add "Copy page as Markdown" and "Copy selection as Markdown" to the right-click menu</li>
+      <li>Optional access to all sites: requested only when you first use a Pro all-tabs action</li>
+    </ul>
+
+    <h2>7. Data retention</h2>
+    <p>Everything ContextLift stores lives in your Chrome profile until you remove it. Uninstalling the extension removes it all. A Pro purchase record is kept by ExtensionPay and Stripe under their own policies.</p>
+
+    <h2>8. Children's privacy</h2>
+    <p>ContextLift does not knowingly collect any data from anyone, including children.</p>
+
+    <h2>9. Changes to this policy</h2>
+    <p>If the extension's data handling changes, this policy will be updated, the "Last updated" date above will change, and the extension will tell you about the change.</p>
+
+    <h2>10. Contact</h2>
+    <p>Questions, concerns, or bug reports about ContextLift or this policy? Please reach out at <a href="mailto:dan.lee.odinson@gmail.com">dan.lee.odinson@gmail.com</a>.</p>
+
+    <footer>
+      ContextLift is an independent project. Markdown conversion uses Mozilla Readability, Turndown and turndown-plugin-gfm, which are open source.
+    </footer>
+  </div>
+</body>
+</html>
