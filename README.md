@@ -2,6 +2,8 @@
 
 This repository holds the privacy policy for **ContextLift: Page to Markdown for AI**, a Chrome extension that turns a web page, or the part you select, into clean Markdown for pasting into an AI chat.
 
+Install it from the [Chrome Web Store](https://chromewebstore.google.com/detail/cbnghjcplnbkfbgcphdaolaokbkabebb).
+
 The policy is served by GitHub Pages at:
 **https://dan-lee-odinson.github.io/contextlift-privacy/**
 
